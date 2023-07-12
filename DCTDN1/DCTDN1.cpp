@@ -3,20 +3,21 @@
 #include<sstream>
 using namespace std;
 
-void Nhap(vector<int>&, int&);
+void Nhap(vector<int>&);
 string ChuoiDaiNhat(vector<int>);
 
 int main()
 {
-	int n;
+	
 	vector<int> v;
-	Nhap(v, n);
+	Nhap(v);
 	cout << ChuoiDaiNhat(v);
 	return 0;
 }
 
-void Nhap(vector<int>& v, int& n)
+void Nhap(vector<int>& v)
 {
+	int n;
 	cin >> n;
 	for (int i = 0; i < n; i++)
 	{
